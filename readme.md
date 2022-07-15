@@ -1,10 +1,10 @@
 ## TCP/IP
 
-Jeśli szukasz prostej implementacji serwera TCP/IP w technologii **PHP** dla danych serializowanych to chyba dobrze trafiłeś. Biblioteka charakteryzuje się niewielkim narzutem z poziomu aplikacji, jednak trzeba brać pod uwagę, że nie będzie ona odpowiednią dla niektórych rozwiązań. Ja wykorzystuje ją dla urządzeń **IoT**, które wrzucają dane do bazy za jej pośrednictwem.
+If you are looking for a simple implementation of a TCP/IP server in **PHP** technology for serialized data, you've come to the right place. The library has a low overhead from the application level, but you have to take into account that it will not be suitable for some solutions. I use it for **IoT** devices that upload data to the database via it.
 
-### Serwer
+### Server
 
-Przykładowa aplikacja serwerowa, która zwraca klientowi otrzymaną wiadomość z dodanym prefiksem. Zamyka połączenie i czeka na następne.
+An example server application that returns a received message to the client with an added prefix. Closes the connection and waits for the next one.
 
 ```php
 require_once("./conn.php");
@@ -23,9 +23,9 @@ while(1) {
 }
 ```
 
-### Klient
+### Client
 
-Przykładowa aplikacja kliencka, która wysyła do serwera `Hello` i wyświetla odpowiedź.
+A sample client application that sends `Hello` to the server and displays the response.
 
 ```php
 require_once("./conn.php");
